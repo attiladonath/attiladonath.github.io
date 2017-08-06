@@ -5,7 +5,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   color: #404040;
-  font-size: 10pt;
+  font-size: 13px;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -22,7 +22,7 @@ div.content {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  padding: 10px;
+  padding: 1em;
 }
 
 h1 {
@@ -38,14 +38,18 @@ img.face {
 }
 
 ul.links i.fa {
-  font-size: 30px;
-  padding-right: 5px;
+  font-size: 2.2em;
+  padding-right: 0.3em;
 }
 
 ul.links {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+ul.links li {
+  margin-bottom: 0.2em;
 }
 
 ul.links a {
