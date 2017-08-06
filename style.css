@@ -34,7 +34,7 @@ div.cell {
   }
 }
 
-@media (min-aspect-ratio: 1/1) and (max-height: 600px) {
+@media (min-aspect-ratio: 1/1) and (max-height: 600px) and (min-width: 600px) {
   div.content {
     display: table;
     margin: auto;
