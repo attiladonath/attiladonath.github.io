@@ -28,13 +28,17 @@ div.cell {
   padding: 1em;
 }
 
+div.cell.text {
+  white-space: nowrap;
+}
+
 @media (min-height: 800px) {
   div.page-wrapper {
     height: 70%;
   }
 }
 
-@media (min-aspect-ratio: 1/1) and (max-height: 600px) and (min-width: 600px) {
+@media (min-aspect-ratio: 1/1) and (max-height: 600px) and (min-width: 500px) {
   div.content {
     display: table;
     margin: auto;
@@ -54,6 +58,7 @@ h1 {
 }
 
 img.face {
+  width: 100%;
   max-width: 250px;
   height: auto;
   border-radius: 6px;
