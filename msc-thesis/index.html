@@ -8,75 +8,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>  <![endif]-->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
 
-    ga('create', 'UA-104089806-1', 'auto');
-    ga('send', 'pageview');
-  </script>
     <style type="text/css">
-    h1 span {
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      h1 span {
         display: block;
-    }
-    h1 span.major {
-        font-size: 1em;
-    }
-    h1 span.minor {
+      }
+      h1 span.minor {
         font-size: .7em;
         font-weight: normal;
-    }
-  </style>
+        color: #555;
+      }
+    </style>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-104089806-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
   <body>
-    <h1> <span class="major">Business Process Management Tools</span> <span class="minor">Developer-Friendly
-        Process Engine vs. Low-Code BPM Suite</span> </h1>
-    <h2>Thesis work</h2>
-    <ul>
-      <li>See: <a href="https://www.dropbox.com/s/ko0nyupx8lp0u4f/thesis-work.pdf?dl=0"
-          title="Thesis work">thesis-work.pdf</a></li>
-    </ul>
-    <h2>Camunda application</h2>
-    <ul>
-      <li>Download <a href="https://camunda.org/release/camunda-bpm/tomcat/7.11/camunda-bpm-tomcat-7.11.0.zip">Camunda
-          Community Platform 7.11</a></li>
+    <div class="container">
+      <h1>
+        <span class="major">Business Process Management Tools</span>
+        <span class="minor">Developer-Friendly Process Engine vs. Low-Code BPM Suite</span>
+      </h1>
+      <h2>Thesis work</h2>
       <ul>
-        <li>See: <a href="https://camunda.com/download/">https://camunda.com/download/</a></li>
+        <li>See: <a href="https://www.dropbox.com/s/ko0nyupx8lp0u4f/thesis-work.pdf?dl=0" title="Thesis work">thesis-work.pdf</a></li>
       </ul>
-      <li>Start the server with <em>start-camunda.sh</em> or <em>start-camunda.bat</em></li>
-      <li>Download and deploy the <a href="https://www.dropbox.com/s/3v2dn9p6nmxzyh8/camunda-master.zip?dl=0">Booking
-          application</a></li>
+      <h2>Camunda application</h2>
       <ul>
-        <li>See: README.md</li>
+        <li>Download <a href="https://camunda.org/release/camunda-bpm/tomcat/7.11/camunda-bpm-tomcat-7.11.0.zip">Camunda Community Platform 7.11</a></li>
+        <ul>
+          <li>See: <a href="https://camunda.com/download/">https://camunda.com/download/</a></li>
+        </ul>
+        <li>Start the server with <em>start-camunda.sh</em> or <em>start-camunda.bat</em></li>
+        <li>Download and deploy the <a href="https://www.dropbox.com/s/3v2dn9p6nmxzyh8/camunda-master.zip?dl=0">Booking application</a></li>
+        <ul>
+          <li>See: README.md</li>
+        </ul>
+        <li>Download and start <a href="https://www.dropbox.com/s/prbpzb7p5sdjw09/camunda-ui-master.zip?dl=0">Booking UI</a></li>
+        <ul>
+          <li>See: README.md</li>
+        </ul>
       </ul>
-      <li>Download and start <a href="https://www.dropbox.com/s/prbpzb7p5sdjw09/camunda-ui-master.zip?dl=0">Booking
-          UI</a></li>
+      <h2>Pega application</h2>
       <ul>
-        <li>See: README.md</li>
+        <li>Use a clean Pega 8.2.1 environment</li>
+        <ul>
+          <li>E.g. a virtual machine from the <a href="https://academy.pega.com/library/8/senior-system-architect">Senior System Architect</a> Pega Academy course</li>
+        </ul>
+        <li>Import the <a href="https://www.dropbox.com/s/q0m4q9ccrcwxmsa/Booking_20191116.zip?dl=0">Booking application</a></li>
+        <ul>
+          <li>Application / Distribution / Import</li>
+          <li>Leave all the default settings</li>
+        </ul>
+        <li>Users (name / password):</li>
+        <ul>
+          <li>Admin@BIT / rules</li>
+          <li>Manager@BIT / rules</li>
+          <li>Clerk@BIT / rules</li>
+          <li>User@BIT / rules</li>
+        </ul>
       </ul>
-    </ul>
-    <h2>Pega application</h2>
-    <ul>
-      <li>Use a clean Pega 8.2.1 environment</li>
-      <ul>
-        <li>E.g. a virtual machine from the <a href="https://academy.pega.com/library/8/senior-system-architect">Senior
-            System Architect</a> Pega Academy course</li>
-      </ul>
-      <li>Import the <a href="https://www.dropbox.com/s/q0m4q9ccrcwxmsa/Booking_20191116.zip?dl=0">Booking
-          application</a></li>
-      <ul>
-        <li>Application / Distribution / Import</li>
-        <li>Leave all the default settings</li>
-      </ul>
-      <li>Users (name / password):</li>
-      <ul>
-        <li>Admin@BIT / rules</li>
-        <li>Manager@BIT / rules</li>
-        <li>Clerk@BIT / rules</li>
-        <li>User@BIT / rules</li>
-      </ul>
-    </ul>
+    </div>
   </body>
 </html>
